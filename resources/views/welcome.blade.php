@@ -13,7 +13,7 @@
                 <p class="content__hidden-text" id="hidden-text"></p>
                 <form action="{{route('link.store')}}" class="content__form" onsubmit="return createShortLink(this)" method="POST">
                     @csrf
-                    <input type="text" required placeholder="URL" name="url">
+                    <input type="text" required placeholder="URL" name="url" id="url">
                     <button type="submit" class="content__submit">Сократить</button>
                 </form>
             </aside>
